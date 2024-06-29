@@ -8,8 +8,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 100%;
         height: 100%;
         margin: 0;
+        box-sizing: border-box;
+        flex-shrink: 0;
+        overflow: hidden;
       }
 
       .header {
@@ -22,30 +26,53 @@
 
       img {
         position: absolute;
-        max-width: 100%;
-        display: block;
-        vertical-align: middle;
+        overflow-clip-margin: content-box;
+        overflow: clip;
       }
 
       .page1 {
-        width: 89.625rem;
-        height: 64rem;
-        top: 0.625rem;
-        left: 0rem;
+        width: 100.888vw;
+        height: 11.3691vw;
+        position: absolute;
+        left: -3vw;
+        right: 0;
+        top: -3vw;
+        padding: 0.7995vw 2.3411vw;
+        filter: drop-shadow(1.1419vw 0.571vw 1.5989 #376ba61c);
+        background-image: url(img/001.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        display: block;
+        unicode-bidi: isolate;
       }
 
       .page2 {
-        width: 13.6875rem;
-        height: 4.875rem;
-        top: 0.625rem;
-        left: 3.625rem;
+        left: 5.4823vw;
+        top: 19.3584vw;
+        width: 26.4397vw;
+        height: 4.9107vw;
       }
 
       .page3 {
-        width: 89.625rem;
-        height: 7.4357rem;
-        top: 0rem;
-        left: 0rem;
+        width: 9.4224vw;
+        height: 3.3691vw;
+        top: 1.25rem;
+        align-self: center;
+      }
+
+      .page4 {
+        width: 100%;
+        height: 54.2498vw;
+        background-image: url(img/004.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: block;
+        unicode-bidi: isolate;
+        max-width: 100%;
+        object-fit: cover;
       }
 
       .text1 {
@@ -75,9 +102,10 @@
   </head>
   <body>
     <div class="header">
-      <img src="img/002.png" class="page1">
-      <img src="img/004.png" class="page3">
-      <img src="img/003.png" class="page2">
+      <div class="page1"></div>
+      <div class="page4"></div>
+      <img src="img/002.png" class="page2" />
+      <img src="img/003.png" class="page3" />
       <div class="text1">关于我们</div>
       <div class="text2">登录</div>
     </div>
