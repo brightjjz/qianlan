@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>浅蓝彼岸-登陆</title>
+    <title></title>
+
     <style>
       body {
         box-sizing: border-box;
@@ -40,6 +41,7 @@
         margin-left: 3.3743vw;
         width: 22.0211vw;
         height: 10.1714vw;
+
       }
 
       .page4 {
@@ -105,24 +107,54 @@
         width: 2.7429vw;
         height: 1.3714vw;
       }
+
+      .text1 {
+        left: 40vw;
+        top: 100vw;
+      }
+
+      #myForm {
+        /* 设置背景图 */
+        background-image: url('/images/101.png');
+
+        /* 确保背景图覆盖整个表单 */
+        background-size: cover;
+
+        /* 背景图不重复 */
+        background-repeat: no-repeat;
+
+        /* 其他样式，如宽度、高度、内边距等 */
+        margin-left: 22.5px;
+        width: 300px;
+        height: 300px;
+        padding: 20px;
+        border-radius: 10px;
+      }
     </style>
+
   </head>
   <body>
-    <img src="../img/104.png" class="page1" />
+    <img src="../img/104.png" class="page1">
     <div class="page2">
-
-      <img src="../img/101.png" class="page3" />
-      <img src="../img/102.png" class="page4" />
-      <img src="../img/103.png" class="page5" />
+      <form id="myForm" action="/submit_form" method="post">
+        <!-- 表单内容 -->
+        <input type="text" placeholder="姓名">
+        <input type="email" placeholder="邮箱">
+        <!--<button type="submit">提交</button>-->
+      </form>
+      <!--<img src="../img/101.png" class="page3">
+      <img src="../img/102.png" class="page4">-->
+      <img src="../img/103.png" class="page5">
       <div class="page6">
         <div class="page7">
-          <img src="../img/106.png" class="page8" />
+          <img src="../img/106.png" class="page8">
         </div>
         <!--<img src="../img/105.png" class="page9" />-->
         <div class="page9">
-          <img src="../img/107.png" class="page10" />
+          <a href="./shouye.html"><img src="../img/107.png" class="page10"></a>
         </div>
       </div>
     </div>
   </body>
+
 </html>
