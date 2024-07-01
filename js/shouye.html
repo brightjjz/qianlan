@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>浅蓝彼岸-主页</title>
     <style>
       html {
         display: block;
@@ -47,10 +48,10 @@
         flex-direction: column;
       }
 
-      body * {
+      /*  body * {
         box-sizing: border-box;
         flex-shrink: 0;
-      }
+      }*/
 
 
 
@@ -101,10 +102,10 @@
         height: 3.3714vw;
       }
 
-      body * {
+      /*  body * {
         box-sizing: border-box;
         flex-shrink: 0;
-      }
+      }*/
 
       img {
         overflow-clip-margin: content-box;
@@ -212,6 +213,27 @@
         width: 21.4286vw;
         height: 20.2857vw;
       }
+
+      .flex-container {
+        display: flex;
+        align-items: flex-start;
+        /* 如果需要的话 */
+      }
+
+      .flex-subcontainer {
+        display: flex;
+        /* 使用space-between可以使元素之间的间距相等，  
+             并且第一个元素与容器边界没有间距，最后一个元素与容器边界也没有间距 */
+        justify-content: space-between;
+        /* 如果需要元素与容器边界也有间距，可以使用space-around或space-evenly */
+        /* margin-left: 初始值重置为0，因为我们将使用Flexbox的间距控制 */
+      }
+
+      .flex-item {
+        /* 你可能还需要设置其他样式，比如字体、大小、颜色等 */
+        margin-left: 0;
+        /* 移除任何可能导致不等距的左边距 */
+      }
     </style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -231,19 +253,24 @@
           <div data-v-3662db10="" class="flex-row justify-between items-center self-stretch section_2"><img
               data-v-3662db10="" src="../img/qlba.png.png" class="image_2">
             <div data-v-3662db10="" class="flex-row">
-              <div data-v-3662db10="" class="flex-row self-start group"><span data-v-3662db10=""
-                  class="font text">首页</span>
-                <div data-v-3662db10="" class="flex-row shrink-0 ml-95"><span data-v-3662db10=""
-                    class="font">社区探索</span><span data-v-3662db10="" class="font text_2 ml-87">寻访预约</span><span
-                    data-v-3662db10="" class="font text_3 ml-87">线上咨询</span></div>
-              </div><img data-v-3662db10="" src="../img/touxiang.png" class="image ml-134">
+              <div class="flex-container">
+                <span class="flex-item">首页</span>
+                <div class="flex-subcontainer">
+                  <span class="flex-item">社区探索</span>
+                  <span class="flex-item">寻访预约</span>
+                  <span class="flex-item">线上咨询</span>
+                </div>
+              </div>
+              <img data-v-3662db10="" src="../img/touxiang.png" class="image ml-134">
             </div>
           </div>
           <div data-v-3662db10="" class="flex-col justify-start items-end self-center image-wrapper mt-102"><img
               data-v-3662db10="" src="../img/wenhao.png" class="image_3"></div>
           <div data-v-3662db10="" class="flex-row justify-center self-center relative section_3 mt-102"><img
-              data-v-3662db10="" src="../img/112.png.png" class="image_4 pos"><img data-v-3662db10=""
-              src="../img/xxgk.png" class="image_5"></div>
+              data-v-3662db10="" src="../img/112.png.png" class="image_4 pos">
+            <a href="https://ide.code.fun/api/p/667ccab5e7e0f60011ea306e?token=d513b0759af13f8f6175000b67a90f33#/"><img
+                data-v-3662db10="" src="../img/xxgk.png" class="image_5"></a>
+          </div>
         </div>
       </div>
     </div>
