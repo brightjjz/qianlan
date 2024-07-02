@@ -1,0 +1,191 @@
+      body {
+        box-sizing: border-box;
+        flex-shrink: 0;
+        margin: 0;
+        overflow: hidden;
+      }
+
+      img {
+        overflow-clip-margin: content-box;
+        overflow: clip;
+      }
+
+      .page1 {
+        width: 100vw;
+        height: 51.6571vw;
+      }
+
+      .page2 {
+        position: absolute;
+        right: 30.9149vw;
+        top: 3.0857vw;
+        padding: 9.3143vw 2.8909vw 16.5143vw 2.8909vw;
+        background-image: linear-gradient(180deg, #d6f3ff 50%, rgba(232, 243, 255, .8) 69.1%, hsla(0, 0%, 100%, 0) 128.4%);
+        border-radius: 2.8571vw;
+        box-shadow: -0.4vw 0.1143vw 1.0286vw hsla(0, 0%, 100%, 0.5019607843137255);
+        width: 26.5143vw;
+        height: 17vw;
+        display: flex;
+        flex-direction: column;
+        unicode-bidi: isolate;
+      }
+
+      .page3 {
+        margin-left: 3.3743vw;
+        width: 22.0211vw;
+        height: 10.1714vw;
+
+      }
+
+      .page4 {
+        margin-left: 3.3743vw;
+        width: 22.0211vw;
+        height: 10.1714vw;
+      }
+
+      .page5 {
+        margin-right: 0.6263vw;
+        margin-top: 8.0571vw;
+        width: 5.2571vw;
+        height: 1.3714vw;
+        align-self: flex-end;
+      }
+
+      .page6 {
+        left: 80vw;
+        top: 50vw;
+        margin-top: 4.0571vw;
+        padding-left: .1189vw;
+        padding-right: .1166vw;
+        align-self: stretch;
+        /*justify-content: center;*/
+        display: flex;
+        flex-direction: row;
+        unicode-bidi: isolate;
+      }
+
+      .page7 {
+        padding: 1.4286vw 0 1.2vw;
+        filter: drop-shadow(.1143vw .2857vw .2857vw #4385a85c, -.1143vw -.1143vw .2857vw #ffffffd4);
+        background-color: #ddeef5;
+        width: 18.6286vw;
+        height: 0.906vw;
+        align-items: center;
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .page8 {
+        width: 5.4857vw;
+        height: 1.3714vw;
+      }
+
+      .page9 {
+        padding: 1.4286vw 0 1.2vw;
+        background-image: linear-gradient(125.8deg, #c6e7f5 -239%, #e4f2f7 336.8%);
+        border-radius: 6.8vw;
+        box-shadow: .1143vw .2857vw .5714vw .2286vw rgba(67, 133, 168, .3607843137254902), -.1143vw -.1143vw .5714vw .2857vw hsla(0, 0%, 100%, .8313725490196079);
+
+        width: 15.2189vw;
+        height: 1vw;
+        margin-left: 0.6286vw;
+        align-items: center;
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .page10 {
+        width: 2.7429vw;
+        height: 1.3714vw;
+        margin-right: -0.809vw;
+        margin-top: 0vw;
+        padding: -9.4286vw 0 1.2vw;
+        /* align-items: center;
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: column;*/
+      }
+
+      .text1 {
+        left: 40vw;
+        top: 100vw;
+      }
+
+      /*#myForm {
+        /* 设置背景图 
+        background-image: url('/images/101.png');
+
+        /* 确保背景图覆盖整个表单 
+        background-size: cover;
+
+        /* 背景图不重复 
+        background-repeat: no-repeat;
+
+        /* 其他样式，如宽度、高度、内边距等 
+        margin-left: 22.5px;
+        width: 300px;
+        height: 300px;
+        padding: 20px;
+        border-radius: 10px;
+      }*/
+
+      .kuang1 {
+        background-image: url('../img/101.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 4.5vw;
+        width: 22vw;
+        margin-left: 1.5vw;
+
+        top: 7vw;
+      }
+
+      .kuang2 {
+        background-image: url('../img/102.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 4.5vw;
+        width: 22vw;
+        margin-left: 1.5vw;
+        margin-top: 1.3vw;
+        top: 7vw;
+      }
+
+
+
+      #myForm {
+        height: 3.5vw;
+        width: 22vw;
+        margin-left: 1.5vw;
+        top: 5vw;
+      }
+
+      .input-transparent {
+        border: 1px solid transparent;
+        /* 透明的边框 */
+        border-radius: 10px;
+        background-color: transparent;
+        /* 圆角 */
+        /* 其他样式... */
+        position: absolute;
+        padding-left: 3.9vw;
+        padding-top: 1.45vw;
+      }
+
+      input[type="text"]:focus {
+        outline: none;
+        /* 移除默认的聚焦边框 */
+        border-color: transparent;
+        /* 将边框颜色设置为透明 */
+        /* 也可以添加其他你想要的样式，比如 box-shadow 等 */
+      }
+
+      input[type="email"]:focus {
+        outline: none;
+        /* 移除默认的聚焦边框 */
+        border-color: transparent;
+        /* 将边框颜色设置为透明 */
+        /* 也可以添加其他你想要的样式，比如 box-shadow 等 */
+      }
